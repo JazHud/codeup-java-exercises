@@ -1,3 +1,5 @@
+package com.codeup.java;
+
 public class Quote {
 
     public static String RandomQuote() {

@@ -1,3 +1,5 @@
+package com.codeup.java.animals;
+
 public class Dog { // <--excess modifier/visibility modifier (can be accessed anywhere inside)
     public static String bark(){ //<-calling a method // all methods must be defined by type( int, boolean, long etc. /// voids and can't return therefor store information
        // System.out.println("Woof woof!");//
@@ -35,7 +37,7 @@ public class Dog { // <--excess modifier/visibility modifier (can be accessed an
 //
 //        bark(15);
 //        bark(50);
-//        bark(50, "Bob");
+//        bark(50, "animals.Bob");
 //        bark(15, "Gizmo");
     }
 }

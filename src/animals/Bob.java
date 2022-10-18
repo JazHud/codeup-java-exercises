@@ -1,3 +1,5 @@
+package animals;
+
 import java.util.Scanner;
 
 public class Bob {
@@ -6,7 +8,7 @@ public class Bob {
         boolean talkToBob = true;
 
          do {
-             System.out.println("Talk to Bob a question: ");
+             System.out.println("Talk to animals.Bob a question: ");
              String askBob = sc.nextLine();
              if (askBob.endsWith("!")) {
                  System.out.println("Whoa, chill out!");
