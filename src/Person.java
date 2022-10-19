@@ -6,13 +6,16 @@ public class Person {
 
     private String name;
 
-    public Person(){}
+    public Person(){} //default constructor holds no args inputting args such as name THEN allows for
+//    Person person1 = new Person("John"); <--- these to be used within PersonTest
+//    Person person2 = new Person("John");
+/// DEFAULT CONTRACTORS will be overridden by custom constructor so make sure to supply the default
 
     public Person(String name){
        this.name = name;
     }
 
-    public String getName(String name){
+    public String getName(){
 //TODO: return the person's name
        return name;
     }
@@ -23,7 +26,7 @@ public class Person {
     }
     public void sayHello(){
 //TODO: print a message to the console using the person's name
-        System.out.printf("Hello, %s!", getName(name));
+        System.out.printf("Hello, %s!", name);
     }
 
 

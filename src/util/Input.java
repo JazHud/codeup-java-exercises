@@ -10,16 +10,18 @@ public class Input {
         scanner = new Scanner(System.in);
         System.out.println("");
     }
-
     public String getString() {
         System.out.println("Enter your text here: ");
         return scanner.nextLine();
     }
-
+    public String getString(String prompt){
+        System.out.println(prompt);
+        return scanner.nextLine();
+    }
     public boolean yesNo() {
-        System.out.println("Would you like to continues? yes/no");
+        System.out.println("Yes or No?");
         String userInput = scanner.next().toLowerCase();
-        boolean yay = userInput.startsWith("y");
+        boolean yay = userInput.equalsIgnoreCase("y") || userInput.equalsIgnoreCase("yes");
         if (yay) {
             return true;
         }else{
@@ -28,7 +30,7 @@ public class Input {
     }
 
 
-        public int getInt ( int min, int max){
+        public int getInt (int min, int max){
             System.out.printf("Enter a number between %d and %d: ", min, max);
             int userInt = scanner.nextInt();
             if (userInt >= min && userInt <= max) {
@@ -45,6 +47,10 @@ public class Input {
             return scanner.nextInt();
         }
 
+        public double getDouble(String prompt){
+            System.out.println(prompt);
+            return scanner.nextDouble();
+        }
         public double getDouble (double min, double max){
             System.out.printf("Enter a number with two decimal places between %.2f and %.2f: ", min, max);
             double userInt = scanner.nextDouble();

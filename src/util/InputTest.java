@@ -9,7 +9,7 @@ public class InputTest {
         System.out.println(input1.getInt());
         System.out.println(input1.getDouble(1.00, 100.00));
         System.out.println(input1.getDouble());
-
+        System.out.println(input1.getDouble("Enter your grade: "));
 
     }
 }
