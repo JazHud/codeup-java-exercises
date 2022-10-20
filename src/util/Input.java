@@ -47,6 +47,7 @@ public class Input {
             return scanner.nextInt();
         }
 
+        //BELOW ALLOWS PROMPT TO BE INPUT FROM THE MAIN CLASS
         public double getDouble(String prompt){
             System.out.println(prompt);
             return scanner.nextDouble();

@@ -1,5 +1,8 @@
 package com.codeup.java;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.Scanner;
 
 public class Person {
@@ -28,6 +31,23 @@ public class Person {
 //TODO: print a message to the console using the person's name
         System.out.printf("Hello, %s!", name);
     }
+
+    public String toString(){
+        return name;
+    }
+
+    public static Person[] addPerson(Person[] array, Person newsib){
+      int i;
+      Person[] moreSiblings = new Person[array.length +1];
+      for (i = 0; i < array.length; i++)
+          moreSiblings[i] = array[i];///setting the new array to the new position of the old array
+
+      moreSiblings[array.length] = newsib;
+      return moreSiblings;
+
+
+    }
+    
 
 
 }
