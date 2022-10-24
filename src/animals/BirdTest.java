@@ -9,7 +9,7 @@ public class BirdTest {
 //    }
 
     public static void main(String[] args) {
-//        Bird crow = new Bird();
+//        Bird crow = new Bird(); //<-- won't work since now we declared the bird class as abstract. Crow has to be created by extending the Bird class
 //        crow.setName("Dr. Crow");
 //        System.out.print(crow.getName() + " goes "); //<-- .print puts all code on the same line
 //        crow.makeNoise();
@@ -42,6 +42,7 @@ public class BirdTest {
         Parrot parrot = new Parrot();
         System.out.println(Parrot.order);
         //System.out.println(argumentativeOrnithologist("Psittaciformes", "Sphenisciformes"));
+        parrot.beCute();
 
     }
 }

@@ -1,7 +1,7 @@
 package com.codeup.java.animals;
 
-public class Parrot extends Bird {
-
+public class Parrot extends Bird implements Pet {
+//<-- once Pet is implemented you have to have its methods be called below (beCute)
     public final static String order = "Psittaciformes";
     // to keep this the same even through method manipulation like with the argumentativeOrnithologist method in bird test will not work since it is final::: final can also be used on the Parrot and no more extensions can be made of Parrot:: final on methods can not be overridden either;
     public void makeNoise() {
@@ -11,6 +11,10 @@ public class Parrot extends Bird {
 
     public void echo(String repeat){
         System.out.println(repeat);
+    }
+
+    public void beCute(){
+        System.out.println("Human goes AWWWWW!");
     }
 
     public Parrot(){

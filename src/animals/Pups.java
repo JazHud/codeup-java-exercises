@@ -1,7 +1,7 @@
 package com.codeup.java.animals;
 import com.codeup.java.Quote;
 
-public class Pets {
+public class Pups {
    private String name;
 
     public String getName() {

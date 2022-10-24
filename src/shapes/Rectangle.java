@@ -1,43 +1,26 @@
 package com.codeup.java.shapes;
 
-public class Rectangle {
+ public class Rectangle extends Quadrilateral implements Measurable {
 
-    private int length;
+  @Override
+  public void setLength(double length) {
+   this.length = length;
+  }
 
-    public int getLength() {
-        return length;
-    }
+  @Override
+  public void setWidth(double width) {
+   this.width = width;
+  }
 
-    public void setLength(int length) {
-        this.length = length;
-    }
+  @Override
+  public double getPerimeter() {
+   return 2 * width + 2 * length;
+  }
 
-    private int width;
+  public Rectangle(double length, double width) {
+   super(length, width);
+  }
 
-    public int getWidth(int i) {
-        return width;
-    }
-
-    public void setWidth(int width) {
-        this.width = width;
-    }
-
-    public Rectangle(){};
-
-    public Rectangle(int length, int width){
-        this.setLength(length);
-        this.setWidth(width);
-    }
-
-    public int getArea(int length, int width){
-        System.out.println("Im the superclass");
-        return length * width;
-    }
-
-    public int getPerimeter(int length, int width){
-        System.out.println("Im the superclass");
-        return ((2 * length) + (2 * width));
-    }
-
-
-}
+  public Rectangle() {
+  }
+ }
