@@ -18,15 +18,12 @@ public class Input {
         System.out.println(prompt);
         return scanner.nextLine();
     }
+
     public boolean yesNo() {
         System.out.println("Yes or No?");
         String userInput = scanner.next().toLowerCase();
         boolean yay = userInput.equalsIgnoreCase("y") || userInput.equalsIgnoreCase("yes");
-        if (yay) {
-            return true;
-        }else{
-            return false;
-        }
+        return yay;
     }
 
 
