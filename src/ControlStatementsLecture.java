@@ -62,7 +62,7 @@ public class ControlStatementsLecture {
         //////////WHILE LOOP////////////
 //        int i = 1;
 //        System.out.println("The loop hasn't started yet. The value of i is " + i);
-//        while(i < 10){ //<--conditional test and will loop through until the conditional statement is false
+//        while(i < 10){ //<--conditional test.txt and will loop through until the conditional statement is false
 //            System.out.println("Now i'm in the loop. i has not incremented yet and its value is " + i);
 //            i++;
 //            System.out.println("I'm still in the loop. i has incremented and its value is " + i);

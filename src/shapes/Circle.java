@@ -1,7 +1,5 @@
 package com.codeup.java.shapes;
 
-import com.codeup.java.util.Input;
-
 import java.util.Scanner;
 
 public class Circle {
