@@ -55,7 +55,7 @@ public class FileIOLecture {
 //                                                             //||
 //        System.out.println(dataDirectory);                   //||
 //        System.out.println(dataFile);                        //||
-//
+
 //        if (Files.notExists(dataDirectory)) {                  //|| actually creating directory we named above
 //            try {                                              //||
 //                Files.createDirectories(dataDirectory);        //||
